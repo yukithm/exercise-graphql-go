@@ -12,3 +12,7 @@ model:
 resolver:
   filename: resolver.go
   type: Resolver
+
+models:
+  Todo:
+    model: github.com/yukithm/exercise-graphql-go.Todo
