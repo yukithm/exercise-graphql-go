@@ -10,8 +10,16 @@ type User {
   name: String!
 }
 
+type File {
+  path: String!
+  size: Int!
+  isDir: Boolean!
+  entries: [File!]
+}
+
 type Query {
   todos: [Todo!]!
+  root: File!
 }
 
 input NewTodo {
