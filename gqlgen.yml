@@ -16,3 +16,8 @@ resolver:
 models:
   Todo:
     model: github.com/yukithm/exercise-graphql-go.Todo
+  File:
+    model: github.com/yukithm/exercise-graphql-go.File
+    fields:
+      entries:
+        resolver: true
